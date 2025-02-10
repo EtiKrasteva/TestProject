@@ -1,13 +1,10 @@
---Test Automation Project - TestAutomationETI
+# Test Automation Project - TestAutomationETI
 
-
---Overview
-
+## Overview
 This project is a test automation framework designed for UI and API testing. It is structured to separate concerns, making it scalable and easy to maintain.
 
-
---Project Structure
-
+## Project Structure
+```
 TestAutomationETI
 │── Configuration
 │   └── Config.cs                  # Configuration settings
@@ -32,43 +29,37 @@ TestAutomationETI
 │       ├── BaseUiTest.cs          # Base class for UI tests
 │       └── TestDragAndDrop.cs     # UI test for drag and drop functionality
 │── config.json                     # Configuration file
+```
 
+## Technologies Used
+- **Programming Language**: C#
+- **Test Framework**: NUnit
+- **UI Automation**: Selenium WebDriver
+- **API Testing**: RestSharp
+- **Build Tool**: .NET 8
 
---Technologies Used
+## How to Run Tests
+### Prerequisites
+- Install .NET 8 SDK
+- Install dependencies using NuGet
 
-Programming Language: C#
-
-Test Framework: NUnit
-
-UI Automation: Selenium WebDriver
-
-API Testing: RestSharp
-
-Build Tool: .NET Core
-
-
---How to Run Tests
-
---Prerequisites
-
-Install .NET Core SDK
-
-Install dependencies using NuGet
-
---Running API Tests
-
+### Running API Tests
+```sh
 cd TestAutomationETI
- dotnet test --filter ApiTests
+dotnet test --filter ApiTests
+```
 
---Running UI Tests
-
+### Running UI Tests
+```sh
 cd TestAutomationETI
- dotnet test --filter UiTests
+dotnet test --filter UiTests
+```
 
+## Configuration
+Update `config.json` to modify test settings, such as base URLs, credentials, and browser settings.
 
---Configuration
+## License
+This project is licensed under the MIT License.
 
-Update config.json to modify test settings, such as base URLs, credentials, and browser settings.
-
---Author
-Eti Krasteva-Peeva
+---
+**Author**: Eti Krasteva-Peeva
