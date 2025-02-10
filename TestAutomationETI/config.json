@@ -1,0 +1,12 @@
+{
+  "Config": {
+    "Url": "https://reqres.in/api",
+    "Endpoints": {
+      "GetUsers": "/users",
+      "CreateUser": "/users"
+    },
+    "UIConfig": {
+      "Url": "https://kitchen.applitools.com/"
+    }
+  }
+  }
